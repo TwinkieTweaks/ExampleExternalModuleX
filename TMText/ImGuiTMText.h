@@ -1,5 +1,5 @@
 #include "TMText.h"
-#include "../imgui/imgui.h"
+#include <imgui/imgui.h>
 #pragma once
 
 namespace ImGui

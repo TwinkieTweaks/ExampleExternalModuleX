@@ -4,7 +4,10 @@
 // Windows Header Files
 #include <windows.h>
 
+#include <sstream>
+
 #define IMGUI_DEFINE_MATH_OPERATORS
+#define IMGUI_API __declspec(dllimport)
 #include "TMText/ImGuiTMText.h"
 #include "TMText/TMText.h"
 #include "imgui/imgui.h"

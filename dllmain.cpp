@@ -1,10 +1,10 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include "pch.h"
 
-class MyModule : IModule
+class MyModule : public IModule
 {
 public:
-    MyModule(TwinkTrackmania& TrackmaniaMgr)
+    MyModule(TwinkTrackmania& TrackmaniaMgr, ILoggert& Loggert)
     {
         this->Twinkie = &TrackmaniaMgr;
         this->Name = "My module";
@@ -23,10 +23,9 @@ public:
     }
 };
 
-IModule* MyModuleFactory(TwinkTrackmania* TrackmaniaMgr, ImGuiContext* Ctx)
+IModule* MyModuleFactory(TwinkTrackmania* TrackmaniaMgr, ILoggert* Loggert)
 {
-    ImGui::SetCurrentContext(Ctx);
-    return reinterpret_cast<IModule*>(new MyModule(*TrackmaniaMgr));
+    return static_cast<IModule*>(new MyModule(*TrackmaniaMgr, *Loggert));
 }
 
 BOOL APIENTRY DllMain( HMODULE hModule,
