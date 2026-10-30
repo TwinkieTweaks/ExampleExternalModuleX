@@ -17,7 +17,7 @@ public:
     {
         ImGui::Begin("Hi!");
 
-        ImGui::Text("$f00Funk$0f0y$f00.");
+        ImGui::Text("\\$f00Funk\\$0f0y\\$f00.");
 
         ImGui::End();
     }
