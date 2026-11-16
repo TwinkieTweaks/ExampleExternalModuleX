@@ -1,90 +1,96 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
+    <Filter Include="Module">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
+    <Filter Include="SDK">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="SDK\TMText">
+      <UniqueIdentifier>{2C6E1B4A-7D3F-4E8A-9B21-5A0C8F6D3E17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vendor">
+      <UniqueIdentifier>{8E4D2A61-3B9C-4F07-A5D8-1C7E6B9F2A40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vendor\imgui">
+      <UniqueIdentifier>{5A9F3C82-1E6D-4B4A-8C37-D2F0A1B6E953}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\framework.h">
+      <Filter>Module</Filter>
     </ClInclude>
-    <ClInclude Include="pch.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\pch.h">
+      <Filter>Module</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imconfig.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="sdk\Arch.h">
+      <Filter>SDK</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imgui.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="sdk\Exports.h">
+      <Filter>SDK</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imgui_impl_dx9.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="sdk\ILoggert.h">
+      <Filter>SDK</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imgui_impl_dx11.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="sdk\IModule.h">
+      <Filter>SDK</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imgui_impl_win32.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="sdk\Offsets.h">
+      <Filter>SDK</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imgui_internal.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="sdk\Stdlibs.h">
+      <Filter>SDK</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imstb_rectpack.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="sdk\TMTypes.h">
+      <Filter>SDK</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imstb_textedit.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="sdk\TwinkTrackmania.h">
+      <Filter>SDK</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imstb_truetype.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="sdk\TMText\ImGuiTMText.h">
+      <Filter>SDK\TMText</Filter>
     </ClInclude>
-    <ClInclude Include="Arch.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="sdk\TMText\TMText.h">
+      <Filter>SDK\TMText</Filter>
     </ClInclude>
-    <ClInclude Include="TMText\ImGuiTMText.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="vendor\imgui\imconfig.h">
+      <Filter>Vendor\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="TMText\TMText.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="vendor\imgui\imgui.h">
+      <Filter>Vendor\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="Exports.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="vendor\imgui\imgui_impl_dx11.h">
+      <Filter>Vendor\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="Offsets.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="vendor\imgui\imgui_impl_dx9.h">
+      <Filter>Vendor\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="Stdlibs.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="vendor\imgui\imgui_impl_win32.h">
+      <Filter>Vendor\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="IModule.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="vendor\imgui\imgui_internal.h">
+      <Filter>Vendor\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="TwinkTrackmania.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="vendor\imgui\imstb_rectpack.h">
+      <Filter>Vendor\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="ILoggert.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="vendor\imgui\imstb_textedit.h">
+      <Filter>Vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\imgui\imstb_truetype.h">
+      <Filter>Vendor\imgui</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\dllmain.cpp">
+      <Filter>Module</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\pch.cpp">
+      <Filter>Module</Filter>
     </ClCompile>
-    <ClCompile Include="Offsets.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="sdk\Offsets.cpp">
+      <Filter>SDK</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

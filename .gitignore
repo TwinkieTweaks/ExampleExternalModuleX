@@ -362,3 +362,13 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /ExampleE.656dc7ee/TMCN/ExampleE.656dc7ee.tlog
+
+# Visual Studio intermediate folders for this project (Win32 game configs and long-name IntDir)
+/ExampleE.*/
+/TM1/
+/TMO/
+/TMS/
+/TMSX/
+/TMU/
+/ESWC/
+/TMCN/
